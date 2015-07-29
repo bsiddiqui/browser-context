@@ -96,6 +96,7 @@ module.exports = {
   scroll: window.scrollY,
   density: window.devicePixelRatio,
   language: window.navigator.userLanguage || window.navigator.language,
+  orientation: window.innerHeight > window.innerWidth ? 'portrait' : 'landscape',
   os: checkOS(),
   browser: checkBrowser()
 }
