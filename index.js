@@ -97,6 +97,7 @@ module.exports = {
   density: window.devicePixelRatio,
   language: window.navigator.userLanguage || window.navigator.language,
   orientation: window.innerHeight > window.innerWidth ? 'portrait' : 'landscape',
+  retina: window.devicePixelRatio && window.devicePixelRatio > 1,
   os: checkOS(),
   browser: checkBrowser()
 }
